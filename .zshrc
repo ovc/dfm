@@ -57,6 +57,8 @@ plugins=(git git-flow cp tmux colored-man common-aliases taskwarrior systemd)
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOCONNECT=false
+ZSH_TMUX_AUTOQUIT=false
+ZSH_TMUX_FIXTERM=true
 
 source $ZSH/oh-my-zsh.sh
 
