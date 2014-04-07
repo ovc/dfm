@@ -82,3 +82,21 @@ fi
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 set -o vi
+
+# My aliases
+alias prox="ssh -2qTnNf -D 5999 ROvchinnikov@camelot-1-57"
+
+alias c217="xfreerdp --no-nla --ignore-certificate -z -g 1439x848 -d mfc --gdi sw --plugin cliprdr --plugin drdynvc --plugin rdpdr --data scard:scard disk:Disk:/home/ovc/Share -- camelot-2-17 1>/dev/null 2>/dev/null &"
+
+alias c317="xfreerdp --no-nla --ignore-certificate -z -g 1439x848 -d mfc --gdi sw --plugin cliprdr --plugin drdynvc --plugin rdpdr --data scard:scard disk:Disk:/home/ovc/Share -- camelot-3-17 1>/dev/null 2>/dev/null &"
+
+alias rdp="xfreerdp --no-nla --ignore-certificate -z -g 1439x848 -d mfc --gdi sw --plugin cliprdr --plugin drdynvc --plugin rdpdr --data scard:scard disk:Disk:/home/ovc/Share --"
+
+#alias tmux="tmux attach || tmux new"
+
+alias pub="sudo cryptsetup luksOpen /dev/sda2 pub && sudo mount /dev/mapper/pub /pub/"
+
+alias vt="gnome-terminal -x vim"
+alias gtvim="gnome-terminal --tab-with-profile=X -t Vim -x vim >&1"
+
+export EDITOR="/usr/local/bin/vim"
